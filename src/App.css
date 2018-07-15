@@ -12,6 +12,7 @@ nav {
   align-items: center;
   padding: 10px;
   background: white;
+  transition: 1s;
 }
 
 .large {
