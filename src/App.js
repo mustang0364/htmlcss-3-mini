@@ -11,6 +11,9 @@ class App extends Component {
           <div className="menu small">Menu</div>
           <div className="menu large">About Download Contact</div>
         </nav>
+        <div className="hero">
+          <h1>Greyscale</h1>
+        </div>
       </div>
     );
   }

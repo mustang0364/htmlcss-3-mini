@@ -15,6 +15,15 @@ nav {
   transition: 1s;
 }
 
+.hero {
+  display: flex;
+  color: grey;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  font-size: 32px;
+}
+
 .large {
   display: none;
 }
@@ -34,6 +43,12 @@ nav {
     color: white;
   }
 
+  .hero {
+    color: #eee;
+    height: 400px;
+    font-size: 72px;
+  }
+
   .logo {
     margin-left: 100px;
   }
@@ -42,3 +57,4 @@ nav {
     margin-right: 100px;
   }
 }
+
