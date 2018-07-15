@@ -7,10 +7,7 @@
 
 nav {
   display: flex;
+  justify-content: space-between;
   padding: 10px;
   background: white;
-}
-
-.middle {
-  flex: 1;
 }

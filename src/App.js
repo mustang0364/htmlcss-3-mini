@@ -7,7 +7,6 @@ class App extends Component {
       <div className="app">
         <nav>
           <div className="logo">Logo</div>
-          <div className="middle"></div>
           <div className="menu">Menu</div>
         </nav>
       </div>
