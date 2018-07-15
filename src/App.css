@@ -6,8 +6,38 @@
 }
 
 nav {
+  height: 50px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 10px;
   background: white;
+}
+
+.large {
+  display: none;
+}
+
+@media (min-width: 800px) {
+  .small {
+    display: none;
+  }
+
+  .large {
+    display: initial;
+  }
+
+  nav {
+    background: transparent;
+    height: 100px;
+    color: white;
+  }
+
+  .logo {
+    margin-left: 100px;
+  }
+
+  .menu {
+    margin-right: 100px;
+  }
 }

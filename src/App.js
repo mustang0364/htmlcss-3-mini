@@ -6,8 +6,10 @@ class App extends Component {
     return (
       <div className="app">
         <nav>
-          <div className="logo">Logo</div>
-          <div className="menu">Menu</div>
+          <div className="logo small">Logo</div>
+          <div className="logo large">Logo</div>
+          <div className="menu small">Menu</div>
+          <div className="menu large">About Download Contact</div>
         </nav>
       </div>
     );
