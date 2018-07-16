@@ -7,8 +7,11 @@ class App extends Component {
     return (
       <div className="app">
         <nav>
-          <div className="brand">My Stylish Site</div>
-          <div className="menu">Menu</div>
+          <div className="brand small">My Stylish Site</div>
+          <div className="menu small">Menu</div>
+
+          <div className="brand large">My Stylish Site</div>
+          <div className="menu large">About Projects Contact</div>
         </nav>
       </div>
     );

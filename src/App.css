@@ -1,6 +1,6 @@
 .app {
   background: url('https://blackrockdigital.github.io/startbootstrap-grayscale/img/bg-masthead.jpg');
-  background-position: center;
+  background-position: left;
   background-size: cover;
   min-height: 100vh;
 }
@@ -17,4 +17,25 @@ nav {
 .brand {
   font-size: large;
   font-weight: bold;
+}
+
+.large {
+  display: none;
+}
+
+@media (min-width: 650px) {
+  .large {
+    display: initial;
+  }
+
+  .small {
+    display: none;
+  }
+
+  nav {
+    background: transparent;
+    height: 100px;
+    color: white;
+    padding: 0 50px;
+  }
 }
