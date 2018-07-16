@@ -23,73 +23,20 @@ nav {
   display: none;
 }
 
-.animations {
-  display: flex;
-  justify-content: space-around;
+.drawer {
+  position: fixed;
+  top: 50px;
+  right: 0;
+  width: 0px;
+  background: #333;
+  color: #eee;
+  height: calc(100vh - 50px);
+  transition: 1s;
 }
 
-.square {
+.open {
   width: 100px;
-  height: 100px;
-  background: violet;
-}
-
-.my-animation {
-  animation-name: color-slide;
-  animation-duration: 0.5s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-}
-
-@keyframes color-slide {
-  0% {
-    background: violet;
-    text-decoration: none;
-  }
-
-  70% {
-    background: cornflowerblue;
-  }
-
-  100% {
-    background: chartreuse;
-    text-decoration: underline;
-  }
-}
-
-.circleish {
-  width: 100px;
-  height: 100px;
-  background: violet;
-  animation-name: my-animation2;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-}
-
-@keyframes my-animation2 {
-  0% {
-    border-radius: 0;
-  }
-
-  50% {
-    border-radius: 25%;
-  }
-
-  100% {
-    border-radius: 50%;
-    transform: scale(0.5) translate(-100%, -100%);
-  }
-}
-
-.more-square {
-  width: 100px;
-  height: 100px;
-  background: goldenrod;
-}
-
-.more-square:hover {
-  transform: scale(1.1);
+  padding: 10px;
 }
 
 @media (min-width: 650px) {
