@@ -18,6 +18,7 @@ class App extends Component {
           <div className="square my-animation">
             My text
           </div>
+          <div className="square circleify"></div>
         </div>
       </div>
     );

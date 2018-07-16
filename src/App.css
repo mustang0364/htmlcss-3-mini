@@ -30,7 +30,7 @@ nav {
 
 .animations {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 .square {
@@ -45,6 +45,17 @@ nav {
   animation-iteration-count: infinite;
   animation-direction: alternate; */
   animation: color-slide 2s infinite alternate, text-grow 2s infinite alternate, grow-box 2s infinite alternate;
+  /* animation: do-transform 2s infinite alternate; */
+}
+
+@keyframes do-transform {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(180deg);
+  }
 }
 
 @keyframes color-slide {
@@ -70,8 +81,17 @@ nav {
 
 @keyframes grow-box {
   to {
-    width: 200px;
-    height: 200px;
+    transform: rotate(-180deg);
+  }
+}
+
+.circleify {
+  animation: circleify 2s infinite alternate;
+}
+
+@keyframes circleify {
+  to {
+    border-radius: 50%;
   }
 }
 
