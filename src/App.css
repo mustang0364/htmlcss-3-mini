@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 .app {
   background: url('https://blackrockdigital.github.io/startbootstrap-grayscale/img/bg-masthead.jpg');
   background-position: center;
@@ -22,6 +26,22 @@ nav {
   align-items: center;
   height: 200px;
   font-size: 32px;
+}
+
+.slide-out-menu {
+  position: fixed;
+  top: 50px;
+  right: 0;
+  height: calc(100vh - 50px);
+  padding: 10px;
+  background: #eee;
+  width: 0px;
+  transition: 1s;
+  /* border: 1px red solid; */
+}
+
+.show {
+  width: 100px;
 }
 
 .large {
