@@ -28,6 +28,53 @@ nav {
   display: none;
 }
 
+.animations {
+  display: flex;
+  justify-content: center;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  background: violet;
+}
+
+.my-animation {
+  /* animation-name: color-slide;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate; */
+  animation: color-slide 2s infinite alternate, text-grow 2s infinite alternate, grow-box 2s infinite alternate;
+}
+
+@keyframes color-slide {
+  /* from {
+    background: violet;
+  } */
+
+  to {
+    background: chartreuse;
+  }
+}
+
+
+@keyframes text-grow {
+  from {
+    font-size: 14px;
+  }
+  
+  to {
+    font-size: 44px;
+  }
+}
+
+@keyframes grow-box {
+  to {
+    width: 200px;
+    height: 200px;
+  }
+}
+
 @media (min-width: 800px) {
   .small {
     display: none;

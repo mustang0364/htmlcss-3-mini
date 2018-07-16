@@ -14,6 +14,11 @@ class App extends Component {
         <div className="hero">
           <h1>Greyscale</h1>
         </div>
+        <div className="animations">
+          <div className="square my-animation">
+            My text
+          </div>
+        </div>
       </div>
     );
   }
